@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "crypto-raptors"
+    "name": "opensea-blockchain-clone"
   },
   "api": {
-    "projectId": "3zy01w7y",
+    "projectId": "6gt65pn7",
     "dataset": "production"
   },
   "plugins": [

@@ -19,16 +19,16 @@ const style = {
   profileImg: `w-40 h-40 object-cover rounded-full border-2 border-[#202225] mt-[-4rem]`,
   socialIconsContainer: `flex text-3xl mb-[-2rem]`,
   socialIconsWrapper: `w-44`,
-  socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2`,
-  socialIcon: `my-2`,
+  socialIconsContent: `flex container justify-between text-[1.4rem] border-2 rounded-lg px-2 border-[#e5e8eb]`,
+  socialIcon: `my-2 text-[#707a83]`,
   divider: `border-r-2`,
-  title: `text-5xl font-bold mb-4`,
-  createdBy: `text-lg mb-4`,
+  title: `text-5xl font-bold mb-4 text-[#04111d]`,
+  createdBy: `text-lg mb-4 text-[#353840]`,
   statsContainer: `w-[44vw] flex justify-between py-4 border border-[#151b22] rounded-xl mb-4`,
   collectionStat: `w-1/4`,
-  statValue: `text-3xl font-bold w-full flex items-center justify-center`,
+  statValue: `text-3xl font-bold w-full flex items-center justify-center text-[#2081e2]`,
   ethLogo: `h-6 mr-2`,
-  statName: `text-lg w-full text-center mt-1`,
+  statName: `text-lg w-full text-center mt-1 text-[#8a939b]`,
   description: `text-[#8a939b] text-xl w-max-1/4 flex-wrap mt-4`,
 }
 
@@ -40,7 +40,6 @@ const Collection = () => {
   const [nfts, setNfts] = useState([])
   const [listings, setListings] = useState([])
 
-  //
 
   const nftModule = useMemo(() => {
     if (!provider) return
@@ -164,7 +163,7 @@ const Collection = () => {
         <div className={style.midRow}>
           <div className={style.createdBy}>
             Created by{' '}
-            <span className="text-[#2081e2]">{collection?.creator}</span>
+            <span className="text-[#2081e2]">uchenna</span>
           </div>
         </div>
         <div className={style.midRow}>
